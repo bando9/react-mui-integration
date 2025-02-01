@@ -1,5 +1,5 @@
 import makeStyles from '@mui/styles/makeStyles';
-// import Header from './components/Header';
+import Header from './components/Header';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -23,6 +23,7 @@ function App() {
         <h1>
           Excecutive Dashboard
         </h1>
+        <Header />
       </div>
     </div>
   )
