@@ -1,18 +1,30 @@
-import MButton from './components/MButton'
-import AddBoxIcon from '@mui/icons-material/AddBox';
-import AccessibleForwardIcon from '@mui/icons-material/AccessibleForward';
-import { IconButton } from '@mui/material';
+import makeStyles from '@mui/styles/makeStyles';
+// import Header from './components/Header';
+
+const useStyles = makeStyles(() => ({
+  root: {
+    backgroundColor: '#f5f5f5',
+    fontFamily: '"Segoe UI Symbol"',
+  },
+  container: {
+    padding: '10px',
+    borderRadius: '10px',
+    display: 'flex',
+    flexDirection: 'column',
+  }
+})) 
 
 function App() {
+  const classes = useStyles();
 
   return (
-    <>
-      <MButton startIcon={<AddBoxIcon />} title="Add" >Tambah Item</MButton>
-      <br/>
-      <IconButton>
-        <AccessibleForwardIcon />
-      </IconButton>
-    </>
+    <div className={classes.root}>
+      <div className={classes.container}>
+        <h1>
+          Excecutive Dashboard
+        </h1>
+      </div>
+    </div>
   )
 }
 
