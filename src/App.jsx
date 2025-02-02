@@ -2,6 +2,7 @@ import makeStyles from '@mui/styles/makeStyles';
 import Header from './components/Header';
 import BoxNumber from './components/BoxNumber';
 import { Grid2 } from '@mui/material';
+import ChartPageView from './components/ChartPageView';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -37,7 +38,7 @@ function App() {
             <BoxNumber title="New MRR" number='$25,690' percent='8.7' />
           </Grid2>
           <Grid2 size={3}>
-            <BoxNumber title="Page Views" chart />
+            <BoxNumber title="Page Views" chart={<ChartPageView />} />
           </Grid2>
         </Grid2>
       </div>
