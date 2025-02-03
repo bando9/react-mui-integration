@@ -5,7 +5,7 @@ function BoxNumber(props) {
     const { title = 'Box Number', number, percent, chart } = props;
 
     return (
-        <div style={{ border: '1px solid #000', borderRadius: 5, height: 250, marginTop: '15px', padding: '10px' }}>
+        <div style={{ border: '1px solid #000', borderRadius: 5, height: 250, padding: '10px' }}>
             <h3>{title}</h3>
             {number && (
                 <div style={{fontSize:70, fontWeight:'bold',textAlign:'center', }}>

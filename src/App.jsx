@@ -3,6 +3,7 @@ import Header from './components/Header';
 import BoxNumber from './components/BoxNumber';
 import { Grid2 } from '@mui/material';
 import ChartPageView from './components/ChartPageView';
+import TableDemo from './components/TableDemo';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -10,12 +11,15 @@ const useStyles = makeStyles(() => ({
     fontFamily: '"Segoe UI Symbol"',
   },
   container: {
-    padding: '10px',
-    borderRadius: '10px',
+    padding: '2rem',
+    borderRadius: '2rem',
     display: 'flex',
     flexDirection: 'column',
+    gap: '2rem',
   }
 })) 
+
+
 
 function App() {
   const classes = useStyles();
@@ -41,6 +45,10 @@ function App() {
             <BoxNumber title="Page Views" chart={<ChartPageView />} />
           </Grid2>
         </Grid2>
+
+        <TableDemo />
+
+        
       </div>
     </div>
   )
